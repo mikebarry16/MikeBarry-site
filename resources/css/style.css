@@ -1,15 +1,16 @@
 
 /* Universal Styles */
-
-html, body {
-  font-family: 'Helvetica', sans-serif;
+html {
   font-size: 16px;
-  /* color: hsl(183, 1%, 27%); */
-  margin: 0 auto;
-  background-color: hsl(50, 69%, 95%, 1);
-  overflow-y: auto;
-
 }
+
+body {
+  min-width: 400px; /* To emulate Chrome min-width */
+  background-color: hsl(50, 69%, 95%, 1);
+  font-family: "Work Sans", sans-serif;
+  color: rgb(32, 64, 86);
+}
+
 
 .container {
   max-width: 1200px;
@@ -20,4 +21,8 @@ html, body {
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+#work img {
+  padding: 1rem;
 }
