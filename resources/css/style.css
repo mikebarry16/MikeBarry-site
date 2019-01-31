@@ -12,12 +12,6 @@ body {
 }
 
 
-/* bootstrap overrides */
-/* .container {
-  /* max-width: 1600px; */
-  /* padding: 3rem 3rem; */
-  /* margin: 0 auto; */
-/* } */ 
 
 .jumbotron {
   margin: 0 auto;
@@ -29,16 +23,6 @@ body {
   font-size: 2.75em;
 }
 
-
-/* content */
-/* nav {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .navbar-fixed-top {
-  top: 2rem;
-} */
 
 #work {
   margin: auto 8rem;
