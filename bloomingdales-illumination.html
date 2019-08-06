@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Mike Barry</title>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Volkhov:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fcd8gfv.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
@@ -13,61 +12,53 @@
 
   <body>
 
-    <!-- Header/Navigation -->
-      <header class="container">
-        <nav class="desktop">
-
-          <div class="logo">
-            <a href="index.html">Mike Barry</a>
-          </div>
-
-          <div class="menu">
-            <ul>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
-
-        </nav>
-      </header>
-      <!-- End Header Navigation -->
-
-
-
-      <!-- Project Main -->
-      <div class="project-main container">
-        <div class="sidebar-text">
-          <p class="fixed-text">Praesent ornare libero risus, vel sodales neque viverra at. Donec viverra sodales feugiat. Nullam ultrices nisi ac tellus placerat semper. Duis nec purus efficitur, imperdiet nibh et, dapibus neque. Quisque eu erat neque. Donec pharetra tempor lectus sit amet convallis. Nam condimentum, nisl auctor malesuada sodales, tortor quam finibus leo, ac lacinia diam nulla vitae arcu. Suspendisse potenti. Vivamus ultrices eleifend dolor vitae vehicula. Mauris vehicula mi mauris, ac malesuada turpis suscipit in. </p>
-        </div>
-        <!-- project-gallery -->
-        <div class="imageGallery1">
-          <div class="image-container">
-            <img src="https://a.espncdn.com/photo/2019/0203/r497040_1296x729_16-9.jpg" alt="" />
-          </div>
-          <div class="image-container">
-            <img src="resources/images/Screen Shot 2019-02-04 at 10.37.14 PM.png" alt="" />
-          </div>
-          <div class="image-container">
-            <img src="resources/images/Boneyard-cover.png" alt="" onclick="openModal();currentSlide(3)">
-          </div>
-        </div>
-
+    <!-- Header -->
+    <header class="desktop">
+      <div class="logo">
+        <a href="index.html" class="nav" id="logo">MIKE BARRY</a>
       </div>
+      <div class="menu">
+        <a href="index.html" class="nav underline" id="work">WORK</a>
+        <a href="about.html" class="nav" id="about">INFO</a>
+      </div>
+    </header> <!-- End Header Navigation -->
 
 
-
-      <!-- End Project Images -->
+    <!-- Project Main -->
+    <div class="project-main container">
+      <div class="sidebar-text">
+        <p class="fixed-text">Praesent ornare libero risus, vel sodales neque viverra at. Donec viverra sodales feugiat. Nullam ultrices nisi ac tellus placerat semper. Duis nec purus efficitur, imperdiet nibh et, dapibus neque. Quisque eu erat neque. Donec pharetra tempor lectus sit amet convallis. Nam condimentum, nisl auctor malesuada sodales, tortor quam finibus leo, ac lacinia diam nulla vitae arcu. Suspendisse potenti. Vivamus ultrices eleifend dolor vitae vehicula. Mauris vehicula mi mauris, ac malesuada turpis suscipit in. </p>
+      </div>
+      <!-- project-gallery -->
+      <div class="imageGallery1">
+        <div class="image-container">
+          <img src="https://a.espncdn.com/photo/2019/0203/r497040_1296x729_16-9.jpg" alt="" />
+        </div>
+        <div class="image-container">
+          <img src="resources/images/Screen Shot 2019-02-04 at 10.37.14 PM.png" alt="" />
+        </div>
+        <div class="image-container">
+          <img src="resources/images/Boneyard-cover.png" alt="" onclick="openModal();currentSlide(3)">
+        </div>
+      </div>
+    </div>
+    <!-- End Project Images -->
 
 
     <!-- Footer -->
-    <footer>
-      <div>
-        <p>&copy;2016 Colmar Academy. All rights reserved</p>
-      </div>
-      <div class="legal">
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-      </div>
+    <footer class="desktop">
+      <a href="https://dribbble.com/mikebarry16" target="_blank" class="social">
+        <div>
+          <span>Dribble</span>
+        </div>
+      </a>
+      <a href="#top" class="up nav">
+        <div>
+          <span>Up</span>
+        </div>
+      </a>
     </footer>
+    <!-- END Footer -->
 
     <!-- java here -->
 
