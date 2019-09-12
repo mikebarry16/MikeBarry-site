@@ -717,6 +717,23 @@ p a {
   .project-main {
     margin: 0 3em;
   }
+
+  .wrapper {
+    flex-direction: column;
+
+  }
+
+  .img-left {
+    margin-right: auto;
+  }
+
+  .img-right {
+    margin-left: auto;
+  }
+  .wrapper img {
+    margin: 1em 0;
+
+  }
 }
 
 @media only screen and (max-width: 543px) {
