@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  min-width: 400px; /* To emulate Chrome min-width */
+  /* min-width: 400px; /* To emulate Chrome min-width */ */
   background-color: rgb(248, 245, 243);
   font-family: 'Poppins', sans-serif;
   /* font-family: "nimbus-sans-extended", "Work Sans", sans-serif; */
@@ -821,7 +821,7 @@ p a {
 
 @media only screen and (max-width: 1024px) {
   #old-mike {
-    max-width: 500px;
+    /* max-width: 500px; */
   }
 
   .about-section {
