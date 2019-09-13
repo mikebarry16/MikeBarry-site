@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  /* min-width: 400px; /* To emulate Chrome min-width */ */
+  /* min-width: 400px; /* To emulate Chrome min-width */
   background-color: rgb(248, 245, 243);
   font-family: 'Poppins', sans-serif;
   /* font-family: "nimbus-sans-extended", "Work Sans", sans-serif; */
@@ -95,7 +95,7 @@ a.nav {
 }
 
 a:hover {
-  /* color: #ff52ea; */
+  /* opacity: .5; */
 }
 
 a.nav:after {
@@ -709,7 +709,7 @@ p#subtitle {
 }
 
 p a {
-  opacity: .68;
+  /* opacity: .68; */
   /* color: orange; */
 
 }
@@ -733,6 +733,10 @@ p a {
   .wrapper img {
     margin: 1em 0;
 
+  }
+
+  .concept-art {
+    flex-direction: column;
   }
 }
 
@@ -824,7 +828,7 @@ p a {
   font-style: normal;
   font-stretch: normal;
   text-rendering: geometricPrecision;
-  mix-blend-mode: color-burn;
+  /* mix-blend-mode: color-burn; */
   line-height: 1.9;
   font-size: 2.0em;
   font-weight: 300;
