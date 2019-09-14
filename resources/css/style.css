@@ -903,9 +903,14 @@ p a {
     margin: 0 1.25em;
   }
 
-  .about-info {
-    font-size: 1.3em;
+
+
+  .about-info p {
+    font-size: .66em;
+    text-align: left;
   }
+
+
 
   #young-mike {
     display: none;
