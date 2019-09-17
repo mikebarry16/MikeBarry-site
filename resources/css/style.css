@@ -810,6 +810,10 @@ p a {
     line-height: 1.3;
   }
 
+  .concept-art {
+    margin: .5em;
+  }
+
 }
 
 
@@ -855,27 +859,6 @@ p a {
   overflow: hidden;
   mix-blend-mode: darken;
 }
-
-#young-mike {
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  left: 85px;
-  /* top: -47px; */
-}
-
-
-span#polaroid:hover #young-mike {
-  opacity: 1;
-  /* z-index: 9999; */
-}
-
-/* #young-mike:hover {
-  opacity: 1;
-  /* mix-blend-mode: multiply; */
-  /* z-index: 99999; */
-/* } */
-
 
 
 .about-info {
@@ -963,17 +946,9 @@ span#polaroid:hover #young-mike {
     margin: 0 1.25em;
   }
 
-
-
   .about-info p {
     font-size: .66em;
     text-align: left;
-  }
-
-
-
-  #young-mike {
-    display: none;
   }
 
 }
