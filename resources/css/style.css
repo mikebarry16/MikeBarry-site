@@ -32,7 +32,7 @@ body {
 }
 
 
-a {
+a,h2 {
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -44,6 +44,10 @@ h1 {
   font-size: 1.7em;
   /* font-weight: 500; */
   line-height: 1.4;
+
+}
+
+h2 {
 
 }
 
@@ -66,7 +70,7 @@ body.concept-art {
 header {
  display: flex;
  justify-content: space-between;
- position: fixed;
+ position: relative;
  z-index: 100000;
  right: 0;
  left: 0;
@@ -189,19 +193,53 @@ a.nav:hover:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 500px; */
+  height: 80vh;
   position: relative;
-  top: 5em;
+  /* top: 0; */
   /* margin: 6em; */
 }
 
-.banner-index p {
+.banner-index h2 {
   font-size: 2em;
   font-weight: 300;
   line-height: 1.6;
   margin: 9em 4em;
   text-align: center;
   max-width: 600px;
+}
+
+
+
+.hover-title {
+  display: inline;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hover-image img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  margin-bottom: 0;
+}
+
+.hover-title:hover + .hover-image {
+  display: flex;
+  pointer-events: none;
+}
+
+.hover-image {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
 }
 
 
@@ -376,6 +414,20 @@ img#vertical {
 
   .work .content {
     margin: 1em 3em;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(247, 245, 243,0);
+  }
+
+  .content span {
+    position: relative;
+    opacity: 1;
+    color: #1b181a;
+    padding: 20px 0px;
+    font-size: 1.2em;
+    letter-spacing: .04em;
+    /* text-transform: uppercase; */
+
   }
 
   .work {
@@ -395,18 +447,24 @@ img#vertical {
     display: none;
   }
 
+  .work .content:hover img {
+    opacity: 1;
+    mix-blend-mode: normal;
+  }
+
 }
 
 @media only screen and (max-width: 733px) {
-  .banner-index p {
+  .banner-index h2 {
     font-size: 1.4em;
     line-height: 1.6;
     margin: 9em 3em;
     text-align: center;
     max-width: 600px;
   }
-}
 
+
+}
 
 
 @media only screen and (max-width: 543px) {
@@ -418,6 +476,8 @@ img#vertical {
   .work .content {
     margin: .75em;
   }
+
+
 
   .logo {
     margin-left: 1.25em;
@@ -805,9 +865,9 @@ p a {
 }
 
 
-#young-mike:hover {
+span#polaroid:hover #young-mike {
   opacity: 1;
-  z-index: 9999;
+  /* z-index: 9999; */
 }
 
 /* #young-mike:hover {
@@ -915,10 +975,6 @@ p a {
   #young-mike {
     display: none;
   }
-
-
-
-
 
 }
 
