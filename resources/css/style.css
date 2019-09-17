@@ -186,7 +186,6 @@ a.nav:hover:after {
 }
 
 
-
 /* Work - INDEX */
 
 .banner-index {
@@ -477,8 +476,6 @@ img#vertical {
     margin: .75em;
   }
 
-
-
   .logo {
     margin-left: 1.25em;
   }
@@ -491,6 +488,9 @@ img#vertical {
     display: none;
   }
 
+  .banner-index {
+    height: 50vh;
+  }
 
 
 }
