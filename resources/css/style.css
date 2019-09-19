@@ -835,6 +835,10 @@ p#subtitle {
 }
 
 @media only screen and (max-width: 968px) {
+  .content span {
+    font-size: 1.5em;
+  }
+
   .project-main {
     margin: 0 3em;
   }
@@ -898,6 +902,10 @@ p#subtitle {
 
 
 @media only screen and (max-width: 640px) {
+  .content span {
+    font-size: 1.25em;
+  }
+
   .project-main {
     margin: 0 .25em;
   }
@@ -1081,7 +1089,7 @@ p#subtitle {
   }
 
   .about-info p {
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
   }
 
