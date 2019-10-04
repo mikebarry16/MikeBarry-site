@@ -333,7 +333,7 @@ a.content {
   justify-content: center;
   align-items: center;
   margin: 1em 1em;
-  max-height: 400px;
+  max-height: 600px;
   overflow: hidden;
   background-color: #020202;
 }
