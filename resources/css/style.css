@@ -978,7 +978,7 @@ p#subtitle {
 .about-section {
   display: flex;
   position: relative;
-  /* height: 1800px; */
+  height: 1200px;
   top: 4em;
   flex-direction: row;
   align-items: flex-start;
@@ -1115,7 +1115,7 @@ a.nav:hover:after {
 
 @media only screen and (max-width: 543px) {
   .about-section{
-    margin: 0 1.25em;
+    margin: 2em 1.25em;
   }
 
   .about-info p {
