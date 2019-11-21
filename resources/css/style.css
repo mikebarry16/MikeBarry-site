@@ -1022,7 +1022,7 @@ p#subtitle {
   font-style: normal;
   font-stretch: normal;
   text-rendering: geometricPrecision;
-  mix-blend-mode: overlay;
+  mix-blend-mode: hard-light;
   line-height: 1.95;
   font-size: 1.75em;
   font-weight: 300;
