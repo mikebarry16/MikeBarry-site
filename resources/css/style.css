@@ -329,7 +329,8 @@ a.content {
   margin: 1em 1em;
   max-height: 600px;
   overflow: hidden;
-  background-color: #020202;
+  /* background-color: #020202; */
+  background-color: #90067f;
 }
 
 .work .image-container {
@@ -363,8 +364,8 @@ a.content {
 }
 
 .work .content:hover img {
-  opacity: .1;
-  mix-blend-mode: luminosity;
+  opacity: .15;
+  mix-blend-mode: color-burn;
 }
 
 
