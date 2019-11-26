@@ -526,9 +526,23 @@ body.gray-body-bg {
   margin: 0;
 }
 
+.quad-illustration .col {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  justify-content: space-between;
+}
+
+.quad-illustration {
+  display: flex;
+  margin: 0;
+}
+
 .quad-stella {
   display: flex;
-  margin: 0 1em 6em 1em;
+  margin: 0 .5em 1em .5em;
 }
 
 
