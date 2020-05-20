@@ -464,7 +464,7 @@ img#vertical {
     position: relative;
     opacity: 1;
     color: #1b181a;
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-size: 1.2em;
     letter-spacing: .02em;
     /* text-transform: uppercase; */
@@ -506,7 +506,8 @@ img#vertical {
   }
 
   .work .content {
-    margin: .75em;
+    margin: .75em .75em 3em .75em;
+    flex-direction: column-reverse;
   }
 
   .banner-index {
@@ -887,13 +888,14 @@ p#subtitle {
 
   .img-left {
     margin-right: auto;
+    margin-bottom: .5em;
   }
 
   .img-right {
     margin-left: auto;
   }
   .wrapper img {
-    margin: 1em 0;
+    /* margin: 1em 0; */
 
   }
 
