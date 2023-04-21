@@ -105,7 +105,7 @@ header {
  z-index: 100000;
  right: 0;
  left: 0;
- top: -33px;
+ top: -32px;
  /* margin-right: 7em; */
  /* margin-left: 7em; */
  /* margin-bottom: 2em; */
@@ -1206,8 +1206,7 @@ p#subtitle {
 }
 
 body.about-body {
-  background-color: hsl(206deg 57% 40%);
-  height: 1500px;
+  background-color: rgb(115 194 233 / 52%);
 }
 
 .about-header a.nav {
