@@ -375,7 +375,7 @@ footer.index a.nav:after, header.index a.nav:after {
 .col {
 /*  display: flex;*/
   position: relative;
-/*  width: 700px;*/
+  width: 50%;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -412,7 +412,7 @@ a.arrow {
 
 .work .image-container {
   position: relative;
-  width: 100%;
+/*  width: 100%;*/
   /* transition: color 0.3s ease-in-out; */
 }
 
@@ -1021,14 +1021,22 @@ p#subtitle {
   .img-right {
     margin-left: auto;
   }
+
   .wrapper img {
     /* margin: 1em 0; */
+  }
 
+  .col {
+    width: 100%;
   }
 
   .concept-art {
     flex-direction: column;
-    margin: 8em;
+    margin: 1em;
+  }
+
+  .work .image-container {
+    margin: 1em 0;
   }
 
   .project-banner {
@@ -1073,7 +1081,7 @@ p#subtitle {
   } */
 
   .project-main {
-    /* margin: 0 .25em; */
+    margin: 0 .75em; 
   }
 
   .project-banner {
@@ -1092,7 +1100,7 @@ p#subtitle {
 
 
   .concept-art {
-    margin: .5em;
+    margin: 0;
   }
 
   .project-info {
