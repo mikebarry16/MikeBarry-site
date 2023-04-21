@@ -1141,6 +1141,7 @@ p#subtitle {
   display: flex;
   position: relative;
   top: 3em;
+  flex: 1 .3 auto;
   flex-direction: row;
   align-items: center;
   margin: 12em 7em;
@@ -1151,7 +1152,7 @@ p#subtitle {
   /* display: flex;
   left: 100px; */
   /* top: 108px; */
-  top: 5em;
+/*  top: 5em;*/
   /* position: fixed;
   justify-content: flex-start;
   align-items: center;
@@ -1214,7 +1215,7 @@ p#subtitle {
 }
 
 body.about-body {
-  background-color: rgb(115 194 233 / 52%);
+  background-color: rgb(76 197 170 / 52%);
 }
 
 .about-header a.nav {
@@ -1240,7 +1241,7 @@ a.nav:hover:after {
   .about-section {
     flex-direction: column;
     align-items: center;
-    top: 1em;
+    top: 4em;
     margin: 5em 1.25em;
 
   }
