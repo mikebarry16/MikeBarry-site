@@ -14,27 +14,32 @@ font-stretch: normal;
 
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400&family=Eczar:wght@400;600;700;800&family=IBM+Plex+Sans:wght@600&family=Inter:wght@300;400;500;900&family=Spectral:wght@300;400;500&family=Tilt+Warp&display=swap');
 
-
-
 html {
+  width: 100%;
   font-size: 15px;
+  min-width: fit-content;
 }
+
+
 
 body {
-  /* min-width: 400px; /* To emulate Chrome min-width */
+/*  min-width: fit-content;*/
   background-color: rgb(247 246 243);
+/*  width: 100%;*/
   font-family:'Chivo', sans-serif;
   color: hsla(300, 5%, 10%, 1);
-  margin: 0 auto;
+
+  width: 100% !important;
+  padding-right: 0;
+  position: relative;
 }
 
-body.index {
-  background-color: rgb(247 246 243);
-}
+
+
 
 .container {
   margin: 0 auto;
-  max-width: 1650px; 
+  /*max-width: 1650px;*/ 
   padding-bottom: 5em;
 }
 
@@ -183,10 +188,6 @@ footer.index a.nav:after, header.index a.nav:after {
 
   header {
     height: 1.25em;
-/*    right: 20px;*/
-/*    left:16px;*/
-    top: 32px;
-
   }
 
   /* a.nav {
@@ -295,7 +296,7 @@ footer.index a.nav:after, header.index a.nav:after {
 }
 
 
-.index-main {
+.index-banner {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -335,20 +336,26 @@ footer.index a.nav:after, header.index a.nav:after {
 }
 
 .intro-text p {
-  font-size: 2.1em;
+  font-size: 2.3em;
   font-weight: 400;
   line-height: 1.9;
 }
 
+#canvas {
+ width: 100%;
+ margin: 0 auto;
+}
+
+
 .work {
   display: flex;
+  max-width: 1500px;
   flex-wrap: nowrap;
   justify-content: center;
-   margin: 2em; 
+  margin: 0 auto; 
   position: relative;
 
 }
-
 
 
 .concept-art {
@@ -399,7 +406,6 @@ a.arrow {
   justify-content: center;
   align-items: center;
   margin: 1em 1em;
-
   overflow: hidden;
   background-color: #000000;
 }
@@ -582,7 +588,8 @@ img#vertical {
 
   .work .content {
     margin: .75em .75em 3em .75em;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .banner-index {
@@ -799,7 +806,7 @@ body.gray-body-bg {
   /* justify-content: center; */
   /* top: auto; */
   /*  margin: 0 1.25em 8em 1.25em;*/
-  margin: 8em;
+/*  margin: 8em;*/
 }
 
 .project-banner {
@@ -981,7 +988,9 @@ p#subtitle {
 
 @media only screen and (max-width: 1400px) {
   .content span {
-    font-size: 1.7em;
+    font-size: 1.6em;
+    padding: 0;
+    margin-top: 5px;
   }
 
   .project-main {
@@ -1123,10 +1132,10 @@ p#subtitle {
 .about-section {
   display: flex;
   position: relative;
-  top: 6em;
+  top: 3em;
   flex-direction: row;
   align-items: center;
-  margin: 7em;
+  margin: 12em 7em;
   
 }
 
@@ -1141,8 +1150,14 @@ p#subtitle {
   opacity: .95; */
 }
 
-#old-mike {
-  width: 450px;
+.mike-photo {
+  position: relative;
+  top: 5em;
+}
+
+.old-mike {
+  max-width: 450px;
+  margin: 0 auto;
   /* margin-right: 80px; */
   /* margin-left: 30px; */
   /* position: relative; */
@@ -1150,6 +1165,7 @@ p#subtitle {
   align-items: center;
   overflow: hidden;
 }
+
 
 
 .about-info {
@@ -1168,6 +1184,14 @@ p#subtitle {
   font-weight: 300;
 }
 
+.about-info h2 {
+  font-family: 'Tilt Warp', 'Chivo', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 1.4em;
+/*  letter-spacing: .1em;*/
+
+}
+
 
 .about-info p, .about-info a {
   color: #ffffff;
@@ -1177,9 +1201,7 @@ p#subtitle {
 
 .about-info p {
   font-family: 'Chivo';
-/*  font-size: .9em;*/
-  color: white;
-/*  font-weight: 600;*/
+  color: #000000;
   margin-bottom: 2em;
 }
 
@@ -1211,15 +1233,15 @@ a.nav:hover:after {
   .about-section {
     flex-direction: column;
     align-items: center;
-    top: 10em;
-    margin: 1.25em;
+    top: 1em;
+    margin: 5em 1.25em;
 
   }
 
   .about-info {
-    font-size: 1.6em;
-    margin: 1em;
-/*    top: 4em;*/
+    font-size: 1.7em;
+    margin: 6em .25em;
+    text-align: center;
   }
 
   #old-mike {
@@ -1244,7 +1266,7 @@ a.nav:hover:after {
 
   .about-info p {
     /* font-size: 17px; */
-    text-align: left;
+/*    text-align: left;*/
   }
 
 }
@@ -1254,18 +1276,21 @@ a.nav:hover:after {
 
 footer {
  display: flex;
- justify-content: space-between;
+ justify-content: flex-end;
+ align-items: flex-end;
  position: relative;
  z-index: 100000;
- bottom: 3em;
- right: 0;
- /* left: 0; */
- /* margin-bottom: 2em; */
+ bottom: 0;
+ right: 3em;
  padding-top: 2em;
  /* give it dimensions */
-  height: 50px; 
-  margin: 3em;
+  height: 200px; 
+  margin: 3em 0;
   width: 100%;
+}
+
+footer p {
+/*  font-family: 'Tilt Warp';*/
 }
 
 
