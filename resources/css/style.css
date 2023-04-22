@@ -1203,8 +1203,8 @@ p#subtitle {
 
 
 .about-info p, .about-info a {
-  color: #ffffff;
-  font-size: .8em;
+/*  color: #ffffff;*/
+/*  font-size: .8em;*/
   line-height: 2em;
 }
 
@@ -1249,7 +1249,7 @@ a.nav:hover:after {
   .about-info {
     font-size: 1.7em;
     margin: 6em .25em;
-    text-align: center;
+/*    text-align: center;*/
   }
 
   #old-mike {
@@ -1273,8 +1273,7 @@ a.nav:hover:after {
   }
 
   .about-info p {
-    /* font-size: 17px; */
-/*    text-align: left;*/
+    font-size: .6em; 
   }
 
 }
